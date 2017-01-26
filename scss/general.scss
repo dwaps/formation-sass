@@ -15,11 +15,7 @@ body
 		text:
 		{
 			align: center;
-			shadow: 0 0 10px $ombre,
-						2px 2px 0 $ombre,
-						-2px 2px 0 $ombre,
-						-2px -2px 0 $ombre,
-						2px -2px 0 $ombre;
+			shadow: filiShadow();
 		}
 		font:
 		{
@@ -32,7 +28,7 @@ body
 		position: fixed;
 		color: $gris_clair;
 		z-index: -1;
-		top: 330px;
+		top: filiTop( 50%, 10% );
 		bottom: 0;
 		left: 0;
 		right: 0;

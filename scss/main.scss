@@ -26,6 +26,19 @@ $marge: 30px;
 $filigrane: "DWAPS Formation";
 $bordure: 3px dotted $gris_clair;
 
+// FONCTION PERSO
+@function filiShadow()
+{
+	@return 0 0 10px $ombre,
+			2px 2px 0 $ombre,
+			-2px 2px 0 $ombre,
+			-2px -2px 0 $ombre,
+			2px -2px 0 $ombre;
+}
+@function filiTop( $percent, $height )
+{
+	@return $percent - ( $height / 2 );
+}
 
 // IMPORTS
 @import "general";
