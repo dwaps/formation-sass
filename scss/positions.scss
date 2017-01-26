@@ -61,12 +61,17 @@ header
 	width: 90%;
 	margin: auto;
 
-	article,
-	aside
+	article
 	{
 		border: $bordure;
 		margin: 5px;
 		background: $blanc;
+	}
+
+	aside
+	{
+		@extend article;
+		@extend h3;
 	}
 
 	p
