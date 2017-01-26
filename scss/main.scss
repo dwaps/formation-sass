@@ -13,7 +13,7 @@ $police: #5E4D09;
 $logo: #E8BD18;
 $cadre: #6F18E8;
 $liens: #FF4627;
-$liens_survol: #FF8D27;
+$liens_survol: lighten( $liens, 12% ); // Fonction native
 // !CHARTE GRAPHIQUE
 
 $opacity: .5;

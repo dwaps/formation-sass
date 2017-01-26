@@ -54,7 +54,7 @@ h2, h3, h4
 		align: center;
 		shadow: 2px 2px 1px $blanc, 4px 4px 1px $ombre;
 	}
-	color: $liens_survol;
+	color: desaturate( $liens, 20% ); // Fonction native
 }
 
 a
