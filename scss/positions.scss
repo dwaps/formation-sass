@@ -4,43 +4,50 @@ header
 	box-shadow: 2px 2px 2px $ombre;
 	padding: 0;
 	margin: 0;
-}
-header .logo
-{
-	background: $logo;
-	height: 100px;
-	animation: colorchange 5s infinite;
-}
-header ul
-{
-	display: flex;
-	flex-flow: row wrap;
-	background: $cadre;
-	padding: 0;
-	margin: 0;
-}
-header ul li
-{
-	padding: $marge;
-	font-weight: bolder;
-	transition: background 1s;
-}
-header ul li:first-child
-{
-	margin-left: $marge*2;
-}
-header ul li:hover
-{
-	background: $fond;
-}
-header ul li a
-{
- 	color: $blanc !important; 	
-	transition: color 1s;
-}
-header ul li:hover a
-{
- 	color: $liens_survol !important;
+
+	.logo
+	{
+		background: $logo;
+		height: 100px;
+		animation: colorchange 5s infinite;
+	}
+
+	ul
+	{
+		display: flex;
+		flex-flow: row wrap;
+		background: $cadre;
+		padding: 0;
+		margin: 0;
+
+		li
+		{
+			padding: $marge;
+			font-weight: bolder;
+			transition: background 1s;
+
+			&:first-child
+			{
+				margin-left: $marge*2;
+			}
+
+			&:hover
+			{
+				background: $fond;
+			}
+
+			&:hover a
+			{
+			 	color: $liens_survol !important;
+			}
+
+			a
+			{
+			 	color: $blanc !important; 	
+				transition: color 1s;
+			}
+		}
+	}
 }
 // !HEADER
 
@@ -53,17 +60,19 @@ header ul li:hover a
 	padding: $marge;
 	width: 90%;
 	margin: auto;
-}
-.main article,
-.main aside,
-{
-	border: $bordure;
-	margin: 5px;
-	background: $blanc;
-}
-.main p
-{
-	padding: $marge;
+
+	article,
+	aside
+	{
+		border: $bordure;
+		margin: 5px;
+		background: $blanc;
+	}
+
+	p
+	{
+		padding: $marge;
+	}
 }
 // !BODY
 
@@ -73,34 +82,42 @@ footer
 	box-shadow: 2px -2px 2px $ombre;
 	padding: 0;
 	margin: 0;
-}
-footer h3
-{
-	text-shadow: none !important;
-}
-footer table
-{
-	background: $cadre;
-	padding-bottom: $marge;
-	width: 100%;
-}
-footer table tr
-{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	list-style: none;
-	padding-top: 20px;
-}
-footer table tr td
-{
-	padding-left: $marge + ($marge/2);
-	padding-right: $marge + ($marge/2);
- 	color: $blanc !important;
-}
-footer table tr:last-child td
-{
-	padding-top: $marge;
-	font-size: 0.8em;
+
+	h3
+	{
+		text-shadow: none !important;
+	}
+
+	table
+	{
+		background: $cadre;
+		padding-bottom: $marge;
+		width: 100%;
+
+		tr
+		{
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
+			list-style: none;
+			padding-top: 20px;
+
+			td
+			{
+				padding:
+				{
+					left: $marge + ($marge/2);
+					right: $marge + ($marge/2);
+				}
+			 	color: $blanc !important;
+			}
+
+			&:last-child td
+			{
+				padding-top: $marge;
+				font-size: 0.8em;
+			}
+		}
+	}
 }
 // !FOOTER
