@@ -1,0 +1,15 @@
+@keyframes colorchange
+{
+	0% {
+		background: hsl(48,90,50);
+	}
+	30% {
+		background: hsl(48,90,80);
+	}
+	65% {
+		background: hsl(48,90,20);
+	}
+	100% {
+		background: hsl(48,90,50);
+	}
+}

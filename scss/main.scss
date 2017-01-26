@@ -1,4 +1,91 @@
+/**
+* Auteur : 	DWAPS Formation - Michael Cornillon
+* Cours :	TUTORIEL SASS
+* Mail : 	contact@dwaps.fr
+* Tel :		0651279211
+* Site : 	http://dwaps.fr
+* Date : 	26/01/2017
+**/
+
+// CHARTE GRAPHIQUE
+$fond: #E2FFE3;
+$police: #5E4D09;
+$logo: #E8BD18;
+$cadre: #6F18E8;
+$liens: #FF4627;
+$liens_survol: #FF8D27;
+// !CHARTE GRAPHIQUE
+
+$opacity: .5;
+$blanc: rgba(255, 255, 255, $opacity);
+$gris_clair: #ddd;
+$ombre: #666;
+
+$font_family: Arial, sans-serif;
+$marge: 30px;
+$filigrane: "DWAPS Formation";
+$bordure: 3px dotted $gris_clair;
+
+
+// IMPORTS
+@import "anim";
+@import "positions";
+// !IMPORTS
+
+
 body
 {
-	background: green;
+	font-family: $font_family;
+	background: $fond;
+	padding: 0;
+	margin: 0;
+	color: $police;
+}
+
+body::after // filigrane
+{
+	display: block;
+	content: $filigrane;
+	position: absolute;
+	position: fixed;
+	color: $gris_clair;
+	text-align: center;
+	z-index: -1;
+	text-shadow: 0 0 10px $ombre,
+				2px 2px 0 $ombre,
+				-2px 2px 0 $ombre,
+				-2px -2px 0 $ombre,
+				2px -2px 0 $ombre;
+	font-weight: bold;
+	font-size: 2em;
+	top: 330px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 180px;
+	margin: auto;
+}
+
+ul
+{
+	list-style: none;
+}
+
+h2, h3, h4
+{
+	color: $liens_survol;
+	text-align: center;
+	text-shadow: 2px 2px 1px $blanc, 4px 4px 1px $ombre;
+}
+
+a
+{
+	color: $liens;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover
+{
+	color: $liens_survol;
 }
