@@ -28,7 +28,7 @@ Pour atteindre le code d'une leçon, utilisez la commande `git checkout` suivie 
 
 Ainsi, si je veux me rendre à la leçon 3 (*c*) du 2ème module (*m2*) de la formation, je dois saisir cette commande depuis le dépôt :
 
-    git tag m2c
+    git checkout m2c
 
 Pour savoir quel code de leçon vous souhaitez atteindre, reportez-vous au plan de formation. Celui-ci indique clairement les titres des modules et des leçons.
 
