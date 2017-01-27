@@ -13,3 +13,19 @@
 		background: hsl(48,90,50);
 	}
 }
+
+@keyframes colorblink
+{
+	0% {
+		background: hsl(48,90,50);
+	}
+	50% {
+		background: hsl(48,90,50);
+	}
+	51% {
+		background: hsl(48,90,0);
+	}
+	100% {
+		background: hsl(48,90,0);
+	}
+}

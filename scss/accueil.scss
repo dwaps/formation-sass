@@ -1,128 +1,21 @@
 // HEADER
 header
 {
-	box-shadow: 2px 2px 2px $ombre;
-	padding: 0;
-	margin: 0;
-
-	.logo
-	{
-		background: $logo;
-		height: 100px;
-		animation: colorchange 5s infinite;
-	}
-
-	ul
-	{
-		display: flex;
-		flex-flow: row wrap;
-		background: $cadre;
-		padding: 0;
-		margin: 0;
-
-		li
-		{
-			padding: $marge;
-			font-weight: bolder;
-			transition: background 1s;
-
-			&:first-child
-			{
-				margin-left: $marge*2;
-			}
-
-			&:hover
-			{
-				background: $fond;
-			}
-
-			&:hover a
-			{
-			 	color: $liens_survol !important;
-			}
-
-			a
-			{
-			 	color: $blanc !important; 	
-				transition: color 1s;
-			}
-		}
-	}
+	// @include haut_de_page( colorchange, 5s ); // Param => animation choisie
+	@include haut_de_page( colorblink, .8s ); // Param => animation choisie
 }
 // !HEADER
 
 // BODY
 .main
 {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	padding: $marge;
-	width: 90%;
-	margin: auto;
-
-	article
-	{
-		border: $bordure;
-		margin: 5px;
-		background: $blanc;
-	}
-
-	aside
-	{
-		@extend article;
-		@extend h3;
-	}
-
-	p
-	{
-		padding: $marge;
-	}
+	@include corps_du_site;
 }
 // !BODY
 
 // FOOTER
 footer
 {
-	box-shadow: 2px -2px 2px $ombre;
-	padding: 0;
-	margin: 0;
-
-	h3
-	{
-		text-shadow: none !important;
-	}
-
-	table
-	{
-		background: $cadre;
-		padding-bottom: $marge;
-		width: 100%;
-
-		tr
-		{
-			display: flex;
-			flex-flow: row wrap;
-			justify-content: center;
-			list-style: none;
-			padding-top: 20px;
-
-			td
-			{
-				padding:
-				{
-					left: $marge + ($marge/2);
-					right: $marge + ($marge/2);
-				}
-			 	color: $blanc !important;
-			}
-
-			&:last-child td
-			{
-				padding-top: $marge;
-				font-size: 0.8em;
-			}
-		}
-	}
+	@include pied_de_page;
 }
 // !FOOTER

@@ -1,0 +1,25 @@
+@mixin filigrane
+{
+	text:
+	{
+		align: center;
+		shadow: filiShadow();
+	}
+	font:
+	{
+		weight: bold;
+		size: 2em;
+	}
+	display: block;
+	content: $filigrane;
+	position: absolute;
+	position: fixed;
+	color: $gris_clair;
+	z-index: -1;
+	top: filiTop( 50%, 10% );
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 180px;
+	margin: auto;
+}

@@ -1,0 +1,50 @@
+@mixin haut_de_page( $animLogo, $time )
+{
+	box-shadow: 2px 2px 2px $ombre;
+	padding: 0;
+	margin: 0;
+
+	.logo
+	{
+		background: $logo;
+		height: 100px;
+		animation: $animLogo $time infinite;
+	}
+
+	ul
+	{
+		display: flex;
+		flex-flow: row wrap;
+		background: $cadre;
+		padding: 0;
+		margin: 0;
+
+		li
+		{
+			padding: $marge;
+			font-weight: bolder;
+			transition: background 1s;
+
+			&:first-child
+			{
+				margin-left: $marge*2;
+			}
+
+			&:hover
+			{
+				background: $fond;
+			}
+
+			&:hover a
+			{
+			 	color: $liens_survol !important;
+			}
+
+			a
+			{
+			 	color: $blanc !important; 	
+				transition: color 1s;
+			}
+		}
+	}
+}

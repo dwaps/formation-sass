@@ -1,0 +1,27 @@
+@mixin corps_du_site
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: $marge;
+	width: 90%;
+	margin: auto;
+
+	article
+	{
+		border: $bordure;
+		margin: 5px;
+		background: $blanc;
+	}
+
+	aside
+	{
+		@extend article;
+		@extend h3;
+	}
+
+	p
+	{
+		padding: $marge;
+	}
+}

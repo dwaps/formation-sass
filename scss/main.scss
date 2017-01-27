@@ -40,6 +40,13 @@ $bordure: 3px dotted $gris_clair;
 	@return $percent - ( $height / 2 );
 }
 
+// IMPORTS DES MIXINS
+@import "mixins/filigrane";
+@import "mixins/haut_de_page";
+@import "mixins/corps_du_site";
+@import "mixins/pied_de_page";
+// !IMPORTS DES MIXINS
+
 // IMPORTS
 @import "general";
 @import "anim";
