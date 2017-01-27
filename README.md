@@ -20,7 +20,7 @@ OU BIEN,
 
 
 ## 2. Utilisation
-Pour atteindre le code d'une leçon, utilisez la commande `git tag` suivie de l'étiquette de la leçon. Chez DWAPS, une étiquette de leçon est toujours représentée de cette façon :
+Pour atteindre le code d'une leçon, utilisez la commande `git checkout` suivie de l'étiquette de la leçon. Chez DWAPS, une étiquette de leçon est toujours représentée de cette façon :
 
 * un *m* (1ère lettre du mot **module**) suivi d'un
 * *numero* (correspondant au numéro de module) suivi d'une
@@ -36,4 +36,4 @@ Pour savoir quel code de leçon vous souhaitez atteindre, reportez-vous au plan 
 
 ---
 
-[® DWAPS Formation] (http://dwaps.fr "DWAPS")
+[® DWAPS Formation - Michael Cornillon] (http://dwaps.fr "DWAPS")
