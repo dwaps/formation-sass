@@ -12,6 +12,7 @@
 		border: $bordure;
 		margin: 5px;
 		background: $blanc;
+		@include border-radius( 10px ); // mixin compass
 	}
 
 	aside

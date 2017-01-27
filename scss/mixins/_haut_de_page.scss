@@ -3,6 +3,7 @@
 	box-shadow: 2px 2px 2px $ombre;
 	padding: 0;
 	margin: 0;
+	@include single-text-shadow; // mixin compass
 
 	.logo
 	{

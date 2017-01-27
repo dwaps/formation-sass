@@ -7,6 +7,10 @@
 * Date : 	26/01/2017
 **/
 
+// IMPORT DE COMPASS
+@import "lib/compass";
+// !IMPORT DE COMPASS
+
 // CHARTE GRAPHIQUE
 $fond: #E2FFE3;
 $police: #5E4D09;
@@ -16,6 +20,7 @@ $liens: #FF4627;
 $liens_survol: lighten( $liens, 12% ); // Fonction native
 // !CHARTE GRAPHIQUE
 
+// VARIABLES PERSOS
 $opacity: .5;
 $blanc: rgba(255, 255, 255, $opacity);
 $gris_clair: #ddd;
@@ -25,6 +30,7 @@ $font_family: Arial, sans-serif;
 $marge: 30px;
 $filigrane: "DWAPS Formation";
 $bordure: 3px dotted $gris_clair;
+// !VARIABLES PERSOS
 
 // FONCTION PERSO
 @function filiShadow()
@@ -39,6 +45,7 @@ $bordure: 3px dotted $gris_clair;
 {
 	@return $percent - ( $height / 2 );
 }
+// !FONCTION PERSO
 
 // IMPORTS DES MIXINS
 @import "mixins/filigrane";
